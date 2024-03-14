@@ -1,0 +1,1749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>803</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>803</width>
+    <height>611</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>803</width>
+    <height>611</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Программа первичной настройки AstraLinux</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>230</y>
+      <width>781</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_install">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Установка пакетов</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>771</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Этап 1</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Прокси: 🛈</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_install_proxy">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>131</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Настроить</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_install_datetime">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>50</y>
+         <width>131</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Настроить</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_install_repo">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>50</y>
+         <width>131</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Настроить</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_install_sssd">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>50</y>
+         <width>131</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Настроить</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_install_krb5">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>50</y>
+         <width>131</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Настроить</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>30</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Время: 🛈</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_26">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>30</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Sssd: 🛈</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_27">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>30</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Репозиторий: 🛈</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>30</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Krb5: 🛈</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>110</y>
+        <width>771</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Этап 2</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QLabel" name="label_29">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>30</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Рутокен: 🛈</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_30">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>30</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>VNC,XRDP,SSH: 🛈</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_install_conky">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>131</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Настроить</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_install_vnc">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>50</y>
+         <width>131</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Настроить</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_install_mis">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>50</y>
+         <width>131</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Настроить</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_32">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Conky: 🛈</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_install_rutoken">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>50</y>
+         <width>131</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Настроить</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_33">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>30</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>МИС: 🛈</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_31">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>30</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Браузеры: 🛈</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_install_browsers">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>50</y>
+         <width>131</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Настроить</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>210</y>
+        <width>771</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Этап 3</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QLabel" name="label_38">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>30</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>KASPERSKY: 🛈</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_install_archimed">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>131</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Настроить</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_install_driver_printers">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>50</y>
+         <width>131</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Настроить</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_install_other">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>50</y>
+         <width>131</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Настроить</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_install_smb">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>50</y>
+         <width>131</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Настроить</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_34">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>30</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Архимед: 🛈</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_35">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>30</y>
+         <width>151</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Драйвера для прин.: 🛈</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_36">
+       <property name="geometry">
+        <rect>
+         <x>620</x>
+         <y>30</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Разное: 🛈</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_install_kaspersky">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>50</y>
+         <width>131</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Настроить</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_37">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>30</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Общие папки: 🛈</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_name_pc">
+     <attribute name="title">
+      <string>Имя компьютера</string>
+     </attribute>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>60</y>
+        <width>121</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Имя компьютера</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>120</y>
+        <width>241</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>*Правильно введите имя комьютера. </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_replace_name_pc">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>80</y>
+        <width>331</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>miac-test</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>140</y>
+        <width>241</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Например: miac-test</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="button_replace_name_pc">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>80</y>
+        <width>88</width>
+        <height>34</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Сменить</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_domain">
+     <attribute name="title">
+      <string>Ввод в домен</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>751</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_domain1">
+       <attribute name="title">
+        <string>Основной</string>
+       </attribute>
+       <widget class="QPushButton" name="domain1_in_domain">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>160</y>
+          <width>121</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ввод в домен</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>20</y>
+          <width>58</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string> *Логин доменной учетной записи</string>
+        </property>
+        <property name="text">
+         <string>Логин:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="domain1_lineEdit_login">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>40</y>
+          <width>311</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string> *Логин доменной учетной записи</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>80</y>
+          <width>58</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Пароль:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="domain1_lineEdit_password">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>100</y>
+          <width>311</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>*Пароль доменной учетной записи</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>20</y>
+          <width>261</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Организация:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>80</y>
+          <width>261</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>IP-адрес:</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="domain1_comboBox_organization">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>40</y>
+          <width>311</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>311</width>
+          <height>311</height>
+         </size>
+        </property>
+        <property name="maxCount">
+         <number>1111111111</number>
+        </property>
+        <property name="minimumContentsLength">
+         <number>0</number>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="domain1_comboBox_ip_adress">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>100</y>
+          <width>311</width>
+          <height>32</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="domain1_out_domain">
+        <property name="geometry">
+         <rect>
+          <x>323</x>
+          <y>160</y>
+          <width>121</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Вывод из домен</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="domain1_restart_pc">
+        <property name="geometry">
+         <rect>
+          <x>453</x>
+          <y>160</y>
+          <width>121</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Перезагрузка</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_domain2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="title">
+        <string>Расширенный</string>
+       </attribute>
+       <widget class="QLineEdit" name="domain2_lineEdit_password">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>90</y>
+          <width>221</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+        <property name="placeholderText">
+         <string>*Пароль от miac-admin</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>10</y>
+          <width>221</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string> *Логин доменной учетной записи</string>
+        </property>
+        <property name="statusTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Логин:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>70</y>
+          <width>241</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string> *Пароль доменной учетной записи</string>
+        </property>
+        <property name="text">
+         <string>Пароль:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>10</y>
+          <width>221</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string> *IP-адрес комьютера выберите из списка</string>
+        </property>
+        <property name="text">
+         <string>IP-адрес:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="domain2_lineEdit_login">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>30</y>
+          <width>221</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>*miac-admin</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="domain2_in_domain_2">
+        <property name="geometry">
+         <rect>
+          <x>310</x>
+          <y>210</y>
+          <width>121</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Ввод в домен</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="domain2_comboBox_ip_adress">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>30</y>
+          <width>221</width>
+          <height>32</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_23">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>130</y>
+          <width>221</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;*Выполнить подключение к указанному домену. Если имя домена отсутствует, то получить его из hostname.resolv.conf.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Имя домена</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="domain2_lineEdit_domain">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>150</y>
+          <width>201</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+        <property name="placeholderText">
+         <string>*med.cap.ru</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="domain2_lineEdit_computer_ou">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>90</y>
+          <width>201</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>*OU=Computers,OU=MIAC,OU=!Gcheb,OU=LPU,OU=miac,DC=med,DC=cap,DC=ru</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>70</y>
+          <width>221</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;*Подключение к домену domain.name с заданием имени администратора домена user_name, указанием пути OU в пространстве LDAP (имя OU содержит кириллицу и пробелы), инструмента adcli для интеграции с Active Directory.&lt;/p&gt;&lt;p&gt;Например: &lt;span style=&quot; font-family:'JetBrains Mono,monospace'; color:#6a8759;&quot;&gt;OU=Computers,OU=BSMP,OU=!Gcheb,OU=LPU,OU=MED,DC=med,DC=cap,DC=ru&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Параметр:  --computer-ou</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_42">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>130</y>
+          <width>221</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;*Начиная с astra-ad-sssd-client версии 0.48 доступна возможность задавать параметр подключения --membership-software=adcli (или --membership-software=samba). Значение по умолчанию — adcli. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Параметр:   --membership-software</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="domain2_comboBox_membership">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>150</y>
+          <width>221</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Не выбран</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>adcli</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>samba</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_43">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>10</y>
+          <width>221</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;*Менять содержимое файлов конфигурации hosts и smb.conf.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Параметр: -с</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="domain2_comboBox_c">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>30</y>
+          <width>221</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Не выбран</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Да</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Нет</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_44">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>70</y>
+          <width>221</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;*IP-адрес_сервера_времени.&lt;/p&gt;&lt;p&gt;Задать IP-адрес сервера времени. Если значение отсутствует, то в качестве сервера времени будет использоваться контроллер домена.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Параметр:  -n</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="domain2_lineEdit_ntp_date">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>90</y>
+          <width>201</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>*ntp.med.cap.ru</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="domain2_lineEdit_os_name">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>150</y>
+          <width>221</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>*Astra_Linux</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_45">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>130</y>
+          <width>231</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;*Подключение с заполнением информации о хосте — имя ОС Astra_Linux, версия ОС Advanced_1.7&lt;/p&gt;&lt;p&gt;Например:&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'JetBrains Mono,monospace'; color:#6a8759;&quot;&gt;--os-name=Astra-Linux -- os-version=Advanced_1.7&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Параметр:  --os-name</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="domain2_lineEdit_domain_controller_2">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>210</y>
+          <width>201</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+        <property name="placeholderText">
+         <string>*med-dc.med.cap.ru</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_46">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>190</y>
+          <width>221</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;*Имя контроллера домена. Если FQDN, ключ -d можно опустить.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Контроллер домена</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_47">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>190</y>
+          <width>231</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;*Подключение с заполнением информации о хосте — имя ОС Astra_Linux, версия ОС Advanced_1.7&lt;/p&gt;&lt;p&gt;Например:&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'JetBrains Mono,monospace'; color:#6a8759;&quot;&gt;--os-name=Astra-Linux -- os-version=Advanced_1.7&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="text">
+         <string>Параметр: --os-version</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="domain2_lineEdit_os_version">
+        <property name="geometry">
+         <rect>
+          <x>500</x>
+          <y>210</y>
+          <width>221</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>*Advanced_1.7</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_set_ou">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>90</y>
+          <width>20</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>Вставить шаблон</string>
+        </property>
+        <property name="text">
+         <string>&lt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_set_domain_name">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>150</y>
+          <width>20</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>Вставить шаблон</string>
+        </property>
+        <property name="text">
+         <string>&lt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_set_domian_contorller">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>210</y>
+          <width>20</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>Вставить шаблон</string>
+        </property>
+        <property name="text">
+         <string>&lt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_set_ntp">
+        <property name="geometry">
+         <rect>
+          <x>700</x>
+          <y>90</y>
+          <width>20</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="toolTip">
+         <string>Вставить шаблон</string>
+        </property>
+        <property name="text">
+         <string>&lt;</string>
+        </property>
+       </widget>
+       <zorder>label_20</zorder>
+       <zorder>label_21</zorder>
+       <zorder>label_22</zorder>
+       <zorder>domain2_lineEdit_login</zorder>
+       <zorder>domain2_in_domain_2</zorder>
+       <zorder>domain2_comboBox_ip_adress</zorder>
+       <zorder>label_23</zorder>
+       <zorder>domain2_lineEdit_domain</zorder>
+       <zorder>domain2_lineEdit_computer_ou</zorder>
+       <zorder>label_41</zorder>
+       <zorder>label_42</zorder>
+       <zorder>domain2_comboBox_membership</zorder>
+       <zorder>label_43</zorder>
+       <zorder>domain2_comboBox_c</zorder>
+       <zorder>label_44</zorder>
+       <zorder>domain2_lineEdit_ntp_date</zorder>
+       <zorder>domain2_lineEdit_os_name</zorder>
+       <zorder>label_45</zorder>
+       <zorder>domain2_lineEdit_domain_controller_2</zorder>
+       <zorder>label_46</zorder>
+       <zorder>label_47</zorder>
+       <zorder>domain2_lineEdit_os_version</zorder>
+       <zorder>pushButton_set_ou</zorder>
+       <zorder>domain2_lineEdit_password</zorder>
+       <zorder>pushButton_set_domain_name</zorder>
+       <zorder>pushButton_set_domian_contorller</zorder>
+       <zorder>pushButton_set_ntp</zorder>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>-20</x>
+      <y>0</y>
+      <width>831</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>831</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>831</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(23, , 244);
+background-color: rgb(193, 193, 193);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>30</y>
+       <width>241</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>22</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Настройка АРМ</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_39">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>241</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>ASTRA LINUX</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_40">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>40</y>
+       <width>241</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>МИАЦ</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>781</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>51</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Имя:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>50</y>
+       <width>51</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Домен:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>50</y>
+       <width>121</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>20</y>
+       <width>121</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>20</y>
+       <width>81</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>IP - адрес:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>50</y>
+       <width>81</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MAC-адрес:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>50</y>
+       <width>51</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Релиз:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>20</y>
+       <width>51</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ОС:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_pc_name">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_pc_domain">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>50</y>
+       <width>151</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_pc_ip">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>20</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_pc_os">
+     <property name="geometry">
+      <rect>
+       <x>530</x>
+       <y>20</y>
+       <width>211</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_pc_mac">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>50</y>
+       <width>141</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_pc_release">
+     <property name="geometry">
+      <rect>
+       <x>550</x>
+       <y>50</y>
+       <width>211</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_unlock">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>233</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>ꗃ</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>803</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Главная</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="menubar_action_to_quit"/>
+    <addaction name="separator"/>
+    <addaction name="menubar_action_exit"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <widget class="QMenu" name="help">
+     <property name="title">
+      <string>Помощь</string>
+     </property>
+     <addaction name="menubar_action_help_domain"/>
+    </widget>
+    <addaction name="help"/>
+   </widget>
+   <addaction name="menu_2"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="menubar_action_exit">
+   <property name="text">
+    <string>   Выйти</string>
+   </property>
+  </action>
+  <action name="menubar_action_about">
+   <property name="text">
+    <string>   О программе</string>
+   </property>
+  </action>
+  <action name="menubar_action_help_domain">
+   <property name="text">
+    <string>Ввод в домен</string>
+   </property>
+  </action>
+  <action name="menubar_action_to_quit">
+   <property name="text">
+    <string>   Уволиться</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+  <tabstop>lineEdit_replace_name_pc</tabstop>
+  <tabstop>button_replace_name_pc</tabstop>
+  <tabstop>tabWidget1</tabstop>
+  <tabstop>domain1_lineEdit_login</tabstop>
+  <tabstop>domain1_lineEdit_password</tabstop>
+  <tabstop>domain1_comboBox_organization</tabstop>
+  <tabstop>domain1_comboBox_ip_adress</tabstop>
+  <tabstop>domain1_in_domain</tabstop>
+  <tabstop>domain1_out_domain</tabstop>
+  <tabstop>domain1_restart_pc</tabstop>
+  <tabstop>domain2_lineEdit_login</tabstop>
+  <tabstop>domain2_lineEdit_password</tabstop>
+  <tabstop>domain2_lineEdit_domain</tabstop>
+  <tabstop>pushButton_set_domain_name</tabstop>
+  <tabstop>domain2_lineEdit_domain_controller_2</tabstop>
+  <tabstop>pushButton_set_domian_contorller</tabstop>
+  <tabstop>domain2_comboBox_ip_adress</tabstop>
+  <tabstop>domain2_lineEdit_computer_ou</tabstop>
+  <tabstop>pushButton_set_ou</tabstop>
+  <tabstop>domain2_comboBox_membership</tabstop>
+  <tabstop>domain2_comboBox_c</tabstop>
+  <tabstop>domain2_lineEdit_ntp_date</tabstop>
+  <tabstop>pushButton_set_ntp</tabstop>
+  <tabstop>domain2_lineEdit_os_name</tabstop>
+  <tabstop>domain2_lineEdit_os_version</tabstop>
+  <tabstop>domain2_in_domain_2</tabstop>
+  <tabstop>pushButton_unlock</tabstop>
+  <tabstop>pushButton_install_proxy</tabstop>
+  <tabstop>pushButton_install_datetime</tabstop>
+  <tabstop>pushButton_install_repo</tabstop>
+  <tabstop>pushButton_install_sssd</tabstop>
+  <tabstop>pushButton_install_krb5</tabstop>
+  <tabstop>pushButton_install_conky</tabstop>
+  <tabstop>pushButton_install_rutoken</tabstop>
+  <tabstop>pushButton_install_vnc</tabstop>
+  <tabstop>pushButton_install_mis</tabstop>
+  <tabstop>pushButton_install_browsers</tabstop>
+  <tabstop>pushButton_install_smb</tabstop>
+  <tabstop>pushButton_install_archimed</tabstop>
+  <tabstop>pushButton_install_driver_printers</tabstop>
+  <tabstop>pushButton_install_kaspersky</tabstop>
+  <tabstop>pushButton_install_other</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+ <designerdata>
+  <property name="gridDeltaX">
+   <number>10</number>
+  </property>
+  <property name="gridDeltaY">
+   <number>10</number>
+  </property>
+  <property name="gridSnapX">
+   <bool>true</bool>
+  </property>
+  <property name="gridSnapY">
+   <bool>true</bool>
+  </property>
+  <property name="gridVisible">
+   <bool>true</bool>
+  </property>
+ </designerdata>
+</ui>
